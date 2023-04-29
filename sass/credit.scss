@@ -1,0 +1,130 @@
+@import 'responsive.sсss';
+
+.credit {
+	padding: 80px 0;
+	position: relative;
+	background-color: #051367;
+	.title {
+		color: #fff;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		width: 50%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		background-image: url(../img/bg-credit.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		width: 50%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 3;
+		background: linear-gradient(270deg, #051367 0%, rgba(5, 19, 103, 0) 100%);
+	}
+	&__text {
+		max-width: 600px;
+		width: 100%;
+		margin-bottom: 65px;
+		p {
+			font-size: 18px;
+			line-height: 2;
+			color: #fff;
+			@include media(mdx) {
+	  			font-size: 16px;	
+	  		}
+	  		@include media(sm) {
+		  		font-size: 15px;
+		  	}
+		}
+	}
+	&__wrap {
+		position: relative;
+		z-index: 4;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -25px;
+		@include media(sm) {
+			margin: 0px;
+		}
+	}
+	&__col {
+		width: calc(50% - 50px);
+		background-color: #162578;
+		padding: 40px;
+		margin: 0 25px;
+		margin-bottom: 70px;
+		@include media(mdx) {
+			padding: 35px 20px;
+		}
+		@include media(sm) {
+			width: 100%;
+			margin: 0px;
+			margin-bottom: 45px;
+		}
+		ul {
+			counter-reset: my-credit;
+			li {
+				position: relative;
+				font-size: 18px;
+				line-height: 1.8;
+				color: #fff;
+				padding-left: 20px;
+				@include media(mdx) {
+		  			font-size: 16px;	
+		  		}
+		  		@include media(sm) {
+			  		font-size: 15px;
+			  	}
+			  	&:after {
+			  		position: absolute;
+				    left: 0px;
+				    top: 0px;
+				    font-size: 18px;
+				    counter-increment: my-credit;
+				    content: counter(my-credit) ".";
+				    @include media(mdx) {
+			  			font-size: 16px;	
+			  		}
+			  		@include media(sm) {
+				  		font-size: 15px;
+				  	}
+			  	}
+			}
+		}
+	}
+	&__title {
+		font-size: 40px;
+		line-height: 1.2;
+		color: #fff;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+		font-weight: 400;
+		@include media(mdx) {
+	    	margin-bottom: 35px;	
+	    }
+	    @include media(sm) {
+	    	margin-bottom: 30px;	
+	    }
+	}	
+	&__subtitle {
+		font-size: 32px;
+		line-height: 1.2;
+		color: #FFC700;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+		font-weight: 700;
+		@include media(mdx) {
+			font-size: 28px;
+		}
+	}
+}

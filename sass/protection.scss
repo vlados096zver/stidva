@@ -1,0 +1,38 @@
+@import 'responsive.sсss';
+
+.protection {
+	padding: 70px 0px;
+	.title {
+		color: #333;
+		text-align: center;
+	}
+	.btn {
+		margin: 0 auto;
+	}
+	&__text {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		@include media(mdx) {
+			margin-bottom: 50px;
+		}
+		@include media(sm) {
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 16px;	
+			line-height: 1.88;	
+			color: #333333;
+			text-align: center;
+			@include media(sm) {
+				font-size: 15px;
+			}
+			&:not(:last-child) {
+				padding-bottom: 2em;
+				@include media(sm) {
+					padding-bottom: 1.5em;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@import 'responsive.sсss';
+
+.footer {
+	background-color: #0A0E27;
+	padding: 95px 0;
+	@include media(mdx) {
+		padding: 60px 0;
+	}
+	&__logo {
+		font-size: 32px;
+		line-height: 1.2;
+		color: #fff;
+		margin-bottom: 30px;
+		@include media(mdx) {
+			text-align: center;
+		}
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		@include media(mdx) {
+			justify-content: center
+		}
+		@include media(sm) {
+			flex-direction: column;
+		}
+	}
+	&__elem {
+		display: block;
+		font-size: 24px;
+		line-height: 1.2;
+		color: #fff;
+		margin-bottom: 30px;
+		transition: 0.25s color;
+		@include media(lgxs) {
+			font-size: 21px;
+		}
+		@include media(mdx) {
+			margin-bottom: 20px;
+		}
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		&:hover {
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+	&__holder {
+		display: flex;
+ 	   flex-direction: column;
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include media(mdx) {
+			display: contents; 
+		}
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 1.2;
+		color: #fff;
+		padding-right: 20px;
+		@include media(mdx) {
+			order: 2;
+			padding-right: 0px;	
+			margin-top: 18px;
+			text-align: center;
+		}
+	}
+	&__desc {
+		font-size: 24px;
+		line-height: 1.25;
+		color: #fff;
+		@include media(lgxs) {
+			font-size: 21px;
+			text-align: center;
+		}
+	}
+}

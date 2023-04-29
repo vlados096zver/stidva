@@ -1,0 +1,143 @@
+@import 'responsive.sсss';
+
+.content {
+	padding-bottom: 80px;
+	&__text {
+		a {
+			color: #fff;
+			text-decoration: underline;
+			font-weight: 500;
+			font-family: 'Montserrat', sans-serif;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		p {
+			font-size: 16px;
+			line-height: 1.88;
+			color: #333333;
+			@include media(sm) {
+				font-size: 15px;
+			}
+			&:not(:last-child) {
+				padding-bottom: 2em;
+				@include media(mdx) {
+					padding-bottom: 1.5em;
+				}
+				@include media(sm) {
+					padding-bottom: 1em;
+				}
+			}
+		}
+		h2, h3, h4, h5, h6 {
+			color: #333333;
+			text-transform: uppercase;
+			padding-bottom: 34px;
+			@include media(mdx) {
+				padding-bottom: 30px;
+			}
+			@include media(sm) {
+				padding-bottom: 25px;
+			}
+		}
+		h2 {
+			font-size: 40px;
+			@include media(mdx) {
+				font-size: 34px;
+			}
+			@include media(sm) {
+				font-size: 28px;
+			}
+		}
+		h3 {
+			font-size: 38px;
+			@include media(mdx) {
+				font-size: 32px;
+			}
+			@include media(sm) {
+				font-size: 26px;
+			}
+		}
+		h4 {
+			font-size: 36px;
+			@include media(mdx) {
+				font-size: 30px;
+			}
+			@include media(sm) {
+				font-size: 24px;
+			}
+		}
+		h5 {
+			font-size: 33px;
+			@include media(mdx) {
+				font-size: 27px;
+			}
+			@include media(sm) {
+				font-size: 22px;
+			}
+		}
+		h6 {
+			font-size: 30px;
+			@include media(mdx) {
+				font-size: 28px;
+			}
+			@include media(sm) {
+				font-size: 18px;
+			}
+		}
+		strong {
+			font-size: 20px;
+			font-weight: 700;
+			@include media(mdx) {
+				font-size: 18px;
+			}
+			@include media(sm) {
+				font-size: 16px;
+			}
+		}
+		ul {
+			counter-reset: my-info;
+			li {
+				position: relative;
+				font-size: 16px;
+				padding-left: 20px;
+				@include media(sm) {
+					font-size: 15px;
+				}
+				&:after {
+					position: absolute;
+				    left: 0px;
+				    top: 0px;
+				    font-size: 16px;
+				    color: #333;
+				    counter-increment: my-info;
+				    content: counter(my-info) ".";
+				    @include media(sm) {
+						font-size: 15px;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
+			}
+		}
+	}
+	&__info {
+		background-color: #162578;
+		border-radius: 4px;
+		padding: 20px;
+		margin-bottom: 36px;
+		p {
+			color: #fff;
+			&:not(:last-child) {
+				padding-bottom: 2px;
+				@include media(mdx) {
+					padding-bottom: 2px;
+				}
+				@include media(sm) {
+					padding-bottom: 2px;
+				}
+			}
+		}
+	}
+}
