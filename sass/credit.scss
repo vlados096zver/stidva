@@ -8,26 +8,26 @@
 		color: #fff;
 	}
 	&:after {
-		position: absolute;
-		content: '';
-		width: 50%;
-		height: 100%;
-		top: 0px;
-		left: 0px;
 		z-index: 2;
 		background-image: url(../img/bg-credit.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	&:before {
-		position: absolute;
-		content: '';
-		width: 50%;
-		height: 100%;
-		top: 0px;
-		left: 0px;
 		z-index: 3;
 		background: linear-gradient(270deg, #051367 0%, rgba(5, 19, 103, 0) 100%);
+	}
+	&:after,
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0px;
+		left: 0px;
+		width: 50%;
+		height: 100%;
+		@include media(sm) {
+			width: 65%;
+		}
 	}
 	&__text {
 		max-width: 600px;
@@ -71,33 +71,20 @@
 			margin: 0px;
 			margin-bottom: 45px;
 		}
-		ul {
-			counter-reset: my-credit;
+		ul, ol {
+			margin: 0;
+			padding: 0;
 			li {
+				list-style-position: inside;
 				position: relative;
 				font-size: 18px;
 				line-height: 1.8;
 				color: #fff;
-				padding-left: 20px;
 				@include media(mdx) {
 		  			font-size: 16px;	
 		  		}
 		  		@include media(sm) {
 			  		font-size: 15px;
-			  	}
-			  	&:after {
-			  		position: absolute;
-				    left: 0px;
-				    top: 0px;
-				    font-size: 18px;
-				    counter-increment: my-credit;
-				    content: counter(my-credit) ".";
-				    @include media(mdx) {
-			  			font-size: 16px;	
-			  		}
-			  		@include media(sm) {
-				  		font-size: 15px;
-				  	}
 			  	}
 			}
 		}

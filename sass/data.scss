@@ -123,14 +123,15 @@
 				font-size: 16px;
 			}
 		}
-		ul {
-			counter-reset: my-data;
+		ol {
+			margin: 0;
+			padding: 0;
 			li {
+				list-style-position: inside;
 				position: relative;
 			    font-size: 18px;
 			    line-height: 1.8;
 			    color: #fff;
-			    padding-left: 20px;
 			    margin-bottom: 10px;
 			    @include media(mdx) {
 	  				font-size: 16px;	
@@ -138,14 +139,6 @@
 	  			@include media(sm) {
 			  		font-size: 15px;
 			  	}
-			    &:after {
-			    	position: absolute;
-				    left: 0px;
-				    top: 0px;
-				    font-size: 18px;
-				    counter-increment: my-data;
-				    content: counter(my-data) ".";
-			    }
 			}
 		}
 	}

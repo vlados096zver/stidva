@@ -43,9 +43,11 @@
 		  		font-size: 15px;
 		  	}
 		}
-		ul {
-			counter-reset: my-garant;
+		ol, ul {
+			margin: 0;
+			padding: 0;
 			li {
+				list-style-position: inside;
 				position: relative;
 				font-size: 18px;
 				line-height: 1.8;
@@ -56,20 +58,6 @@
 		  		}
 		  		@include media(sm) {
 			  		font-size: 15px;
-			  	}
-			  	&:after {
-			  		position: absolute;
-				    left: 0px;
-				    top: 0px;
-				    font-size: 18px;
-				    counter-increment: my-garant;
-				    content: counter(my-garant) ".";
-				    @include media(mdx) {
-			  			font-size: 16px;	
-			  		}
-			  		@include media(sm) {
-				  		font-size: 15px;
-				  	}
 			  	}
 			}
 		}

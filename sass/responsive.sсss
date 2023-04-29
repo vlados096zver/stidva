@@ -14,7 +14,7 @@ $break_smx: 650px;
 $break_xs: 560px;
 $break_xxs: 480px;
 $break_mini: 400px;
-$break_small: 374px;
+$break_small: 359px;
 
 @mixin media($media) {
 	@if $media == desc {
