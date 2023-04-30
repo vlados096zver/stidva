@@ -85,11 +85,36 @@
 	&__text {
 		max-width: 800px;
 		margin-bottom: 34px;
-		ul, ol {
-			li {
+		a {
+			color: #fff;
+			text-decoration: underline;
+			font-weight: 500;
+			font-family: 'Montserrat', sans-serif;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		strong {
+			font-size: 20px;
+			font-weight: 700;
+			@include media(mdx) {
+				font-size: 18px;
+			}
+			@include media(sm) {
 				font-size: 16px;
-				line-height: 1.88;
-				color: #333333;
+			}
+		}
+		ol, ul {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-position: inside;
+				position: relative;
+				font-size: 16px;
+				line-height: 1.4;
+				@include media(sm) {
+					font-size: 15px;
+				}
 				&:not(:last-child) {
 					margin-bottom: 16px;
 				}
@@ -181,6 +206,24 @@
 			}
 			@include media(small) {
 				font-size: 16px;
+			}
+		}
+		blockquote {
+			background-color: #162578;
+			border-radius: 4px;
+			padding: 20px;
+			margin-bottom: 36px;
+			p {
+				color: #fff;
+				&:not(:last-child) {
+					padding-bottom: 2px;
+					@include media(mdx) {
+						padding-bottom: 2px;
+					}
+					@include media(sm) {
+						padding-bottom: 2px;
+					}
+				}
 			}
 		}
 	}

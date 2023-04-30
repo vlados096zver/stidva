@@ -1325,15 +1325,38 @@ main {
 	margin-bottom: 34px;
 }
 
-.page-inner__text ul li,
-.page-inner__text ol li {
-	font-size: 16px;
-	line-height: 1.88;
-	color: #333333;
+.page-inner__text a {
+	color: #fff;
+	text-decoration: underline;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.page-inner__text ul li:not(:last-child),
-.page-inner__text ol li:not(:last-child) {
+.page-inner__text a:hover {
+	text-decoration: none;
+}
+
+.page-inner__text strong {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.page-inner__text ol,
+.page-inner__text ul {
+	margin: 0;
+	padding: 0;
+}
+
+.page-inner__text ol li,
+.page-inner__text ul li {
+	list-style-position: inside;
+	position: relative;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.page-inner__text ol li:not(:last-child),
+.page-inner__text ul li:not(:last-child) {
 	margin-bottom: 16px;
 }
 
@@ -1377,97 +1400,18 @@ main {
 	font-size: 22px;
 }
 
-.content {
-	padding-bottom: 80px;
-}
-
-.content__text a {
-	color: #fff;
-	text-decoration: underline;
-	font-weight: 500;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.content__text a:hover {
-	text-decoration: none;
-}
-
-.content__text p {
-	font-size: 16px;
-	line-height: 1.88;
-	color: #333333;
-}
-
-.content__text p:not(:last-child) {
-	padding-bottom: 2em;
-}
-
-.content__text h2,
-.content__text h3,
-.content__text h4,
-.content__text h5,
-.content__text h6 {
-	color: #333333;
-	text-transform: uppercase;
-	padding-bottom: 34px;
-}
-
-.content__text h2 {
-	font-size: 36px;
-}
-
-.content__text h3 {
-	font-size: 30px;
-}
-
-.content__text h4 {
-	font-size: 26px;
-}
-
-.content__text h5 {
-	font-size: 24px;
-}
-
-.content__text h6 {
-	font-size: 22px;
-}
-
-.content__text strong {
-	font-size: 20px;
-	font-weight: 700;
-}
-
-.content__text ol,
-.content__text ul {
-	margin: 0;
-	padding: 0;
-}
-
-.content__text ol li,
-.content__text ul li {
-	list-style-position: inside;
-	position: relative;
-	font-size: 16px;
-	line-height: 1.4;
-}
-
-.content__text ol li:not(:last-child),
-.content__text ul li:not(:last-child) {
-	margin-bottom: 16px;
-}
-
-.content blockquote {
+.page-inner__text blockquote {
 	background-color: #162578;
 	border-radius: 4px;
 	padding: 20px;
 	margin-bottom: 36px;
 }
 
-.content blockquote p {
+.page-inner__text blockquote p {
 	color: #fff;
 }
 
-.content blockquote p:not(:last-child) {
+.page-inner__text blockquote p:not(:last-child) {
 	padding-bottom: 2px;
 }
 
@@ -1919,6 +1863,10 @@ main {
 	padding-right: 0px;
 }
 
+.page-inner__text strong {
+	font-size: 18px;
+}
+
 .page-inner__text p:not(:last-child) {
 	padding-bottom: 1.5em;
 }
@@ -1951,43 +1899,7 @@ main {
 	font-size: 20px;
 }
 
-.content__text p:not(:last-child) {
-	padding-bottom: 1.5em;
-}
-
-.content__text h2,
-.content__text h3,
-.content__text h4,
-.content__text h5,
-.content__text h6 {
-	padding-bottom: 30px;
-}
-
-.content__text h2 {
-	font-size: 32px;
-}
-
-.content__text h3 {
-	font-size: 26px;
-}
-
-.content__text h4 {
-	font-size: 24px;
-}
-
-.content__text h5 {
-	font-size: 22px;
-}
-
-.content__text h6 {
-	font-size: 20px;
-}
-
-.content__text strong {
-	font-size: 18px;
-}
-
-.content blockquote p:not(:last-child) {
+.page-inner__text blockquote p:not(:last-child) {
 	padding-bottom: 2px;
 }
 
@@ -2323,6 +2235,15 @@ main {
 	margin-bottom: 36px;
 }
 
+.page-inner__text strong {
+	font-size: 16px;
+}
+
+.page-inner__text ol li,
+.page-inner__text ul li {
+	font-size: 15px;
+}
+
 .page-inner__text p {
 	font-size: 15px;
 }
@@ -2359,56 +2280,7 @@ main {
 	font-size: 18px;
 }
 
-.content {
-	padding-bottom: 45px;
-}
-
-.content__text p {
-	font-size: 15px;
-}
-
-.content__text p:not(:last-child) {
-	padding-bottom: 1em;
-}
-
-.content__text h2,
-.content__text h3,
-.content__text h4,
-.content__text h5,
-.content__text h6 {
-	padding-bottom: 25px;
-}
-
-.content__text h2 {
-	font-size: 26px;
-}
-
-.content__text h3 {
-	font-size: 22px;
-}
-
-.content__text h4 {
-	font-size: 20px;
-}
-
-.content__text h5 {
-	font-size: 19px;
-}
-
-.content__text h6 {
-	font-size: 18px;
-}
-
-.content__text strong {
-	font-size: 16px;
-}
-
-.content__text ol li,
-.content__text ul li {
-	font-size: 15px;
-}
-
-.content blockquote p:not(:last-child) {
+.page-inner__text blockquote p:not(:last-child) {
 	padding-bottom: 2px;
 }
 
@@ -2457,26 +2329,6 @@ main {
 }
 
 .page-inner__text h6 {
-	font-size: 16px;
-}
-
-.content__text h2 {
-	font-size: 22px;
-}
-
-.content__text h3 {
-	font-size: 19px;
-}
-
-.content__text h4 {
-	font-size: 18px;
-}
-
-.content__text h5 {
-	font-size: 17px;
-}
-
-.content__text h6 {
 	font-size: 16px;
 }
 
